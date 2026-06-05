@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maply｜特殊清掃・遺品整理・ハウスクリーニング 水戸市・那珂市・ひたちなか市</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="水戸市・那珂市・ひたちなか市のハウスクリーニング・特殊清掃・遺品整理・遺品買取。事件現場特殊清掃士・遺品整理士・古物商許可を保有。無料現地見積もり。TEL:029-352-9388">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+/* ── RESET & BASE ── */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Noto Sans JP',sans-serif;color:#1a1a1a;line-height:1.7;background:#fff}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+
+/* ── VARIABLES ── */
+:root{
+ --navy: #1c2b3a;
+ --navy2: #243448;
+ --green: #2a5c45;
+ --gold: #b8822a;
+ --gold2: #d4a04a;
+ --cream: #faf8f4;
+ --warm: #f0ede6;
+ --red: #8b2020;
+ --text: #1a1a1a;
+ --muted: #666;
+ --light: #999;
+ --border:#ddd;
+ --w: min(100%,960px);
+}
+
+/* ── STICKY NAV ── */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(28,43,58,.97);backdrop-filter:blur(8px);border-bottom:1px solid rgba(184,130,42,.3)}
+.nav-inner{max-width:var(--w);margin:0 auto;padding:0 20px;height:56px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-logo{color:#fff;font-family:'Noto Serif JP',serif;font-size:17px;letter-spacing:.05em;white-space:nowrap}
+.nav-links{display:flex;gap:20px;list-style:none}
+.nav-links a{color:rgba(255,255,255,.7);font-size:12px;letter-spacing:.06em;transition:color .2s}
+.nav-links a:hover{color:#fff}
+.nav-tel{color:var(--gold2);font-size:14px;font-weight:700;letter-spacing:.04em;white-space:nowrap}
+.nav-tel small{display:block;font-size:10px;font-weight:400;color:rgba(255,255,255,.5);text-align:right}
+
+/* ── HERO ── */
+.hero{min-height:100svh;background:var(--navy);display:flex;flex-direction:column;justify-content:center;padding:88px 20px 60px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 50%,rgba(42,92,69,.25) 0%,transparent 60%)}
+.hero-inner{max-width:var(--w);margin:0 auto;width:100%}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(184,130,42,.4);color:var(--gold2);font-size:11px;letter-spacing:.12em;padding:5px 14px;border-radius:2px;margin-bottom:28px}
+.hero-eyebrow::before{content:'';width:20px;height:1px;background:var(--gold)}
+.hero-h1{font-family:'Noto Serif JP',serif;font-size:clamp(28px,5.5vw,52px);line-height:1.35;color:#fff;font-weight:700;letter-spacing:.03em;margin-bottom:20px}
+.hero-h1 em{color:var(--gold2);font-style:normal}
+.hero-lead{color:rgba(255,255,255,.65);font-size:clamp(13px,2vw,15px);line-height:1.9;max-width:560px;margin-bottom:36px}
+
+/* ── CREDENTIAL BADGES ── */
+.cred-badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:44px}
+.cred-badge{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.88);font-size:11px;padding:7px 14px;border-radius:2px;letter-spacing:.04em;transition:background .2s}
+.cred-badge span{color:var(--gold2);font-weight:700}
+
+/* ── HERO BTNS ── */
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:14px 32px;border-radius:2px;font-size:14px;font-weight:700;letter-spacing:.04em;transition:all .2s;cursor:pointer;border:none}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-gold:hover{background:var(--gold2)}
+.btn-outline{background:transparent;border:1.5px solid rgba(255,255,255,.45);color:#fff}
+.btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.07)}
+.hero-tel{margin-top:28px;color:rgba(255,255,255,.5);font-size:12px}
+.hero-tel a{color:var(--gold2);font-size:22px;font-weight:700;letter-spacing:.06em}
+
+/* ── SERVICE NAV ── */
+.service-nav{background:var(--navy2);border-top:1px solid rgba(255,255,255,.07)}
+.service-nav-inner{max-width:var(--w);margin:0 auto;display:flex}
+.snav-item{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px 8px;color:rgba(255,255,255,.6);font-size:12px;letter-spacing:.05em;border-right:1px solid rgba(255,255,255,.08);transition:all .2s;cursor:pointer}
+.snav-item:last-child{border-right:none}
+.snav-item:hover{background:rgba(255,255,255,.04);color:#fff}
+.snav-item .snav-icon{display:flex;align-items:center;justify-content:center;width:20px;height:20px;margin-bottom:6px;opacity:.7}.snav-item:hover .snav-icon{opacity:1}
+.snav-item.special{border-top:3px solid var(--red)}
+.snav-item.estate{border-top:3px solid var(--green)}
+.snav-item.clean{border-top:3px solid var(--gold)}
+
+/* ── SECTIONS ── */
+section{padding:80px 20px}
+.sec-inner{max-width:var(--w);margin:0 auto}
+.sec-label{font-size:10px;letter-spacing:.2em;color:var(--gold);font-weight:700;margin-bottom:8px}
+.sec-title{font-family:'Noto Serif JP',serif;font-size:clamp(22px,4vw,34px);font-weight:700;line-height:1.4;margin-bottom:10px}
+.sec-lead{color:var(--muted);font-size:14px;line-height:1.9;max-width:620px}
+.rule{width:40px;height:3px;margin:16px 0 44px}
+
+/* ── CREDENTIAL SECTION ── */
+.creds{background:var(--navy)}
+.creds .sec-label{color:var(--gold2)}
+.creds .sec-title{color:#fff}
+.creds .sec-lead{color:rgba(255,255,255,.6)}
+.creds .rule{background:var(--gold)}
+.cred-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.cred-card{background:rgba(255,255,255,.05);border:1px solid rgba(184,130,42,.2);border-radius:2px;padding:24px 20px}
+.cred-card-icon{font-size:26px;margin-bottom:12px}
+.cred-card-name{color:var(--gold2);font-size:13px;font-weight:700;margin-bottom:4px;line-height:1.5}
+.cred-card-by{font-size:11px;color:rgba(255,255,255,.4);margin-bottom:8px}
+.cred-card-desc{font-size:12px;color:rgba(255,255,255,.65);line-height:1.7}
+.cred-note{margin-top:28px;padding:16px 20px;background:rgba(184,130,42,.08);border-left:3px solid var(--gold);font-size:13px;color:rgba(255,255,255,.7);line-height:1.8}
+
+/* ── SERVICE COMMON ── */
+.service-hd{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+.service-num{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif JP',serif;font-size:15px;font-weight:700;color:#fff;flex-shrink:0}
+.service-body{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;margin-top:40px}
+@media(max-width:680px){.service-body{grid-template-columns:1fr}}
+
+/* ── SPECIAL CLEANING ── */
+.special{background:#fff}
+.special .rule{background:var(--red)}
+.special .service-num{background:var(--red)}
+.sp-flow{display:flex;flex-direction:column;gap:0}
+.sp-step{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--border)}
+.sp-step:last-child{border-bottom:none}
+.sp-step-num{width:32px;height:32px;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0;margin-top:2px}
+.sp-step-content h4{font-size:13px;font-weight:700;color:var(--text);margin-bottom:3px}
+.sp-step-content p{font-size:12px;color:var(--muted);line-height:1.6}
+.sp-note{background:#fff5f5;border:1px solid rgba(139,32,32,.15);border-left:3px solid var(--red);padding:14px 18px;font-size:13px;color:#5a2020;line-height:1.8;border-radius:0 2px 2px 0;margin-top:24px}
+.sp-features{display:flex;flex-direction:column;gap:14px}
+.sp-feat{background:var(--cream);padding:16px 18px;border-radius:2px}
+.sp-feat h4{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:5px}
+.sp-feat p{font-size:12px;color:var(--muted);line-height:1.6}
+
+/* ── ESTATE ── */
+.estate{background:var(--cream)}
+.estate .rule{background:var(--green)}
+.estate .service-num{background:var(--green)}
+.estate-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:32px}
+@media(max-width:580px){.estate-grid{grid-template-columns:1fr}}
+.estate-card{background:#fff;padding:24px 22px}
+.estate-tag{font-size:10px;letter-spacing:.1em;font-weight:700;color:var(--green);margin-bottom:6px}
+.estate-name{font-family:'Noto Serif JP',serif;font-size:17px;font-weight:700;margin-bottom:8px;line-height:1.4;color:var(--navy)}
+.estate-desc{font-size:13px;color:var(--muted);line-height:1.8}
+.estate-price{margin-top:14px;padding-top:12px;border-top:1px solid var(--border);font-size:12px;color:var(--muted)}
+.estate-price strong{font-size:16px;color:var(--green);font-weight:700}
+
+/* ── HOUSECLEANING ── */
+.clean{background:#fff}
+.clean .rule{background:var(--gold)}
+.clean .service-num{background:var(--gold)}
+.price-plans{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-bottom:2px}
+@media(max-width:540px){.price-plans{grid-template-columns:1fr}}
+.price-plan{background:var(--navy);color:#fff;padding:28px 24px}
+.price-plan-name{font-family:'Noto Serif JP',serif;font-size:16px;font-weight:700;margin-bottom:8px;line-height:1.4}
+.price-plan-price{font-size:26px;font-weight:700;color:var(--gold2);letter-spacing:.02em}
+.price-plan-price small{font-size:12px;font-weight:400;color:rgba(255,255,255,.55)}
+.price-plan-desc{font-size:12px;color:rgba(255,255,255,.6);margin-top:8px;line-height:1.7}
+.price-items{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:2px}
+.price-item{background:var(--warm);padding:20px 18px}
+.price-item-name{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:5px}
+.price-item-price{font-family:'Noto Serif JP',serif;font-size:19px;font-weight:700;color:var(--navy)}
+.price-item-price small{font-size:12px;font-weight:400;color:var(--muted)}
+.price-item-note{font-size:11px;color:var(--muted);margin-top:3px;line-height:1.5}
+
+/* ── WORRIES ── */
+.worries{background:var(--cream)}
+.worries .rule{background:var(--navy)}
+.worry-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.worry{background:#fff;padding:20px;border-radius:2px;display:flex;gap:14px;align-items:flex-start}
+.worry-q{flex-shrink:0;width:30px;height:30px;background:var(--navy);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;font-family:'Noto Serif JP',serif}
+.worry-text strong{display:block;font-size:13.5px;color:var(--navy);margin-bottom:3px}
+.worry-text span{font-size:12.5px;color:var(--muted);line-height:1.7}
+
+/* ── FAQ ── */
+.faq{background:#fff}
+.faq .rule{background:var(--navy)}
+.faq-list{display:flex;flex-direction:column;gap:0;border:1px solid var(--border)}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-item:last-child{border-bottom:none}
+.faq-q{display:flex;align-items:flex-start;gap:14px;padding:20px 22px;cursor:pointer;background:#fff;transition:background .15s}
+.faq-q:hover{background:var(--cream)}
+.faq-q-mark{flex-shrink:0;width:28px;height:28px;background:var(--navy);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;font-family:'Noto Serif JP',serif;margin-top:1px}
+.faq-q-text{font-size:14px;font-weight:500;color:var(--navy);line-height:1.5;flex:1}
+.faq-q-icon{flex-shrink:0;font-size:18px;color:var(--muted);transition:transform .2s;margin-top:2px}
+.faq-item.open .faq-q-icon{transform:rotate(45deg)}
+.faq-a{display:none;padding:0 22px 20px 64px}
+.faq-item.open .faq-a{display:block}
+.faq-a-mark{display:inline-block;color:var(--green);font-weight:700;margin-right:6px;font-size:14px}
+.faq-a p{font-size:13.5px;color:var(--muted);line-height:1.8}
+
+/* ── AREA ── */
+.area{background:var(--navy2);padding:48px 20px}
+.area-inner{max-width:var(--w);margin:0 auto;text-align:center}
+.area-title{font-family:'Noto Serif JP',serif;font-size:20px;color:#fff;margin-bottom:16px;font-weight:700}
+.area-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:12px}
+.area-tag{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.82);font-size:12px;padding:5px 16px;border-radius:2px}
+.area-note{font-size:12px;color:rgba(255,255,255,.4)}
+
+/* ── COMPANY ── */
+.company{background:var(--cream)}
+.company .rule{background:var(--navy)}
+.company-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+@media(max-width:640px){.company-grid{grid-template-columns:1fr}}
+.company-tbl{width:100%;border-collapse:collapse}
+.company-tbl tr{border-bottom:1px solid var(--border)}
+.company-tbl th{width:110px;padding:12px 0;font-size:12px;color:var(--muted);font-weight:500;vertical-align:top;text-align:left}
+.company-tbl td{padding:12px 0 12px 12px;font-size:13px;color:var(--text);line-height:1.7}
+.license-list{display:flex;flex-direction:column;gap:8px;margin-top:4px}
+.license-item{background:#fff;padding:12px 16px;border-left:3px solid var(--gold);border-radius:0 2px 2px 0}
+.license-item .l-name{font-size:12px;font-weight:700;color:var(--navy);margin-bottom:2px}
+.license-item .l-num{font-size:11px;color:var(--muted)}
+
+/* ── CTA ── */
+.cta{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%);padding:80px 20px;text-align:center}
+.cta-inner{max-width:var(--w);margin:0 auto}
+.cta-title{font-family:'Noto Serif JP',serif;font-size:clamp(22px,4vw,34px);color:#fff;font-weight:700;margin-bottom:12px}
+.cta-lead{color:rgba(255,255,255,.6);font-size:14px;line-height:1.9;margin-bottom:36px}
+.cta-tel{display:block;font-size:clamp(30px,6vw,46px);font-weight:700;color:var(--gold2);letter-spacing:.06em;font-family:'Noto Serif JP',serif;margin-bottom:6px}
+.cta-hours{font-size:12px;color:rgba(255,255,255,.45);margin-bottom:28px}
+.cta-sub{font-size:12px;color:rgba(255,255,255,.35);margin-top:20px}
+.cta-btns{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+
+/* ── FOOTER ── */
+footer{background:var(--navy);padding:24px 20px;text-align:center}
+footer p{font-size:11px;color:rgba(255,255,255,.3);letter-spacing:.05em}
+
+/* ── UTILS ── */
+.tag{display:inline-block;font-size:10px;font-weight:700;padding:3px 10px;border-radius:2px}
+.tag-red{background:#fae9e9;color:var(--red)}
+.tag-green{background:#e8f3ee;color:var(--green)}
+.tag-gold{background:#faeeda;color:var(--gold)}
+.tag-navy{background:#eef1f5;color:var(--navy)}
+
+/* ── REVEAL ANIMATION ── */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ── RESPONSIVE ── */
+@media(max-width:680px){
+ .nav-links{display:none}
+ section{padding:60px 18px}
+ .service-body{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+ <div class="nav-inner">
+ <a href="#" class="nav-logo">Maply</a>
+ <ul class="nav-links">
+ <li><a href="#special">特殊清掃</a></li>
+ <li><a href="#estate">遺品整理</a></li>
+ <li><a href="#clean">ハウスクリーニング</a></li>
+ <li><a href="#faq">よくある質問</a></li>
+ <li><a href="#company">会社案内</a></li>
+ </ul>
+ <div class="nav-tel">
+ <a href="tel:0293529388">029-352-9388</a>
+ <small>月〜土 9:00–17:00</small>
+ </div>
+ </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+ <div class="hero-inner">
+ <div class="hero-eyebrow">水戸市・那珂市・ひたちなか市 対応</div>
+ <h1 class="hero-h1">
+ 暮らしの清掃、<br>
+ 特殊な現場も、<br>
+ <em>すべてMaplyへ。</em>
+ </h1>
+ <p class="hero-lead">
+ ハウスクリーニングから孤独死・事故現場の特殊清掃、遺品整理・遺品買取まで。<br>
+ 専門資格と実績を持つプロが、大切な場所に誠実に向き合います。
+ </p>
+ <div class="cred-badges">
+ <div class="cred-badge"><span>事件現場特殊清掃士</span>　保有</div>
+ <div class="cred-badge"><span>遺品整理士</span>　保有</div>
+ <div class="cred-badge"><span>古物商許可</span>　取得済</div>
+ </div>
+ <div class="hero-btns">
+ <a href="#cta" class="btn btn-gold">無料見積もりを依頼する</a>
+ <a href="#special" class="btn btn-outline">特殊清掃について</a>
+ </div>
+ <div class="hero-tel">
+ お電話でのご相談：<a href="tel:0293529388">029-352-9388</a>
+ </div>
+ </div>
+</section>
+
+<!-- SERVICE NAV -->
+<nav class="service-nav">
+ <div class="service-nav-inner">
+ <a href="#special" class="snav-item special">
+ <span class="snav-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.5"/><line x1="11" y1="11" x2="17" y2="17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>特殊清掃
+ </a>
+ <a href="#estate" class="snav-item estate">
+ <span class="snav-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6l6-3 6 3v6l-6 3-6-3V6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><line x1="9" y1="3" x2="9" y2="15" stroke="currentColor" stroke-width="1.5"/></svg></span>遺品整理・買取
+ </a>
+ <a href="#clean" class="snav-item clean">
+ <span class="snav-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 14h10M6 14V8l3-5 3 5v6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></span>ハウスクリーニング
+ </a>
+ <a href="#faq" class="snav-item">
+ <span class="snav-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 4h12v8H9l-4 3V12H3V4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>よくある質問
+ </a>
+ <a href="#company" class="snav-item">
+ <span class="snav-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="5" width="12" height="10" stroke="currentColor" stroke-width="1.5"/><path d="M7 15V11h4v4" stroke="currentColor" stroke-width="1.5"/><path d="M6 5V3h6v2" stroke="currentColor" stroke-width="1.5"/></svg></span>会社案内
+ </a>
+ </div>
+</nav>
+
+<!-- CREDENTIALS -->
+<section class="creds">
+ <div class="sec-inner">
+ <p class="sec-label">CREDENTIALS</p>
+ <h2 class="sec-title" style="color:#fff">資格・許可の保有状況</h2>
+ <div class="rule" style="background:var(--gold)"></div>
+ <p class="sec-lead">特殊清掃・遺品整理は資格なしで開業できる業種です。だからこそ資格・許可の有無が、業者選びの最重要基準になります。</p>
+ <div class="cred-grid" style="margin-top:28px">
+ <div class="cred-card reveal">
+ <div class="cred-card-icon" style="width:36px;height:36px;background:rgba(184,130,42,.15);border:1px solid rgba(184,130,42,.3);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--gold2);letter-spacing:.04em;margin-bottom:12px">CSC</div>
+ <div class="cred-card-name">事件現場特殊清掃士</div>
+ <div class="cred-card-by">一般社団法人 事件現場特殊清掃センター</div>
+ <div class="cred-card-desc">感染予防・消臭除菌・薬剤取扱・近隣配慮の専門資格。全国保有者は約2,000名のみ。</div>
+ </div>
+ <div class="cred-card reveal">
+ <div class="cred-card-icon" style="width:36px;height:36px;background:rgba(184,130,42,.15);border:1px solid rgba(184,130,42,.3);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--gold2);letter-spacing:.04em;margin-bottom:12px">IHI</div>
+ <div class="cred-card-name">遺品整理士</div>
+ <div class="cred-card-by">一般財団法人 遺品整理士認定協会</div>
+ <div class="cred-card-desc">廃棄物処理法・古物営業法など関連法令の知識を持つ遺品整理の専門資格。</div>
+ </div>
+ <div class="cred-card reveal">
+ <div class="cred-card-icon" style="width:36px;height:36px;background:rgba(184,130,42,.15);border:1px solid rgba(184,130,42,.3);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--gold2);letter-spacing:.04em;margin-bottom:12px">古物</div>
+ <div class="cred-card-name">古物商許可</div>
+ <div class="cred-card-by">茨城県公安委員会</div>
+ <div class="cred-card-desc">遺品・家財の買取・販売を合法的に行える許可。「無償引取り」との違いはここにある。</div>
+ </div>
+ </div>
+ <div class="cred-note reveal">
+ 【注意】資格・許可を持たない業者が「無料で引き取ります」と言う場合、廃棄物の不法投棄や適正価格での買取が行われないケースがあります。Maplyはすべての業務において法令を遵守し、透明性のある価格でご提供します。
+ </div>
+ </div>
+</section>
+
+<!-- SPECIAL CLEANING -->
+<section class="special" id="special">
+ <div class="sec-inner">
+ <p class="sec-label">SPECIAL CLEANING</p>
+ <div class="service-hd">
+ <div class="service-num">01</div>
+ <div>
+ <h2 class="sec-title">特殊清掃</h2>
+ </div>
+ </div>
+ <div class="rule" style="background:var(--red)"></div>
+ <p class="sec-lead">孤独死・事故・自殺などの現場に対応。事件現場特殊清掃士が、消臭・除菌・原状回復まで一貫して担当します。ご依頼当日〜翌日の対応が可能です。</p>
+
+ <div class="service-body reveal">
+ <!-- 作業の流れ -->
+ <div>
+ <h3 style="font-size:15px;font-weight:700;color:var(--navy);margin-bottom:20px">作業の流れ</h3>
+ <div class="sp-flow">
+ <div class="sp-step">
+ <div class="sp-step-num">1</div>
+ <div class="sp-step-content">
+ <h4>ご連絡・相談</h4>
+ <p>電話またはフォームから。状況を詳しくお聞かせください。秘密厳守でご対応します。</p>
+ </div>
+ </div>
+ <div class="sp-step">
+ <div class="sp-step-num">2</div>
+ <div class="sp-step-content">
+ <h4>現地調査・無料見積もり</h4>
+ <p>汚染範囲・臭気・害虫の有無を確認し、項目別の見積書を提示します。</p>
+ </div>
+ </div>
+ <div class="sp-step">
+ <div class="sp-step-num">3</div>
+ <div class="sp-step-content">
+ <h4>作業実施</h4>
+ <p>汚染物除去→消毒→消臭を専門機材で徹底実施。防護服着用で二次感染を防止します。</p>
+ </div>
+ </div>
+ <div class="sp-step">
+ <div class="sp-step-num">4</div>
+ <div class="sp-step-content">
+ <h4>臭気測定・完了確認</h4>
+ <p>臭気測定器で消臭効果を数値で確認。臭い戻りがないことを証明して完了します。</p>
+ </div>
+ </div>
+ <div class="sp-step">
+ <div class="sp-step-num">5</div>
+ <div class="sp-step-content">
+ <h4>作業報告・引き渡し</h4>
+ <p>作業報告書を発行。遺品整理が必要な場合はそのままご相談いただけます。</p>
+ </div>
+ </div>
+ </div>
+ <div class="sp-note">
+ <strong>プライバシーへの配慮を徹底しています。</strong><br>
+ 作業車両は社名を目立たせないものを使用。近隣への配慮を含め、ご希望に応じた対応が可能です。
+ </div>
+ </div>
+
+ <!-- 特徴 -->
+ <div class="sp-features">
+ <div class="sp-feat reveal">
+ <span class="tag tag-red" style="margin-bottom:8px">感染予防</span>
+ <h4>N95マスク・防護服での完全防護</h4>
+ <p>HIV・B型肝炎・ノロウイルス等の感染リスクに対応。すべての作業員が防護具を完全着用します。</p>
+ </div>
+ <div class="sp-feat reveal">
+ <span class="tag tag-red" style="margin-bottom:8px">消臭技術</span>
+ <h4>業務用オゾン脱臭機による空間除菌</h4>
+ <p>表面の清掃だけでは取れない床下・壁内の臭気にも対応。臭気測定器での数値確認で品質を保証します。</p>
+ </div>
+ <div class="sp-feat reveal">
+ <span class="tag tag-red" style="margin-bottom:8px">害虫対応</span>
+ <h4>ハエ・ウジ虫の除去から始める現場対応</h4>
+ <p>害虫が発生している現場では、清掃前に殺虫処理を実施。根本からの清潔化を徹底します。</p>
+ </div>
+ <div class="sp-feat reveal">
+ <span class="tag tag-red" style="margin-bottom:8px">料金</span>
+ <h4>現地調査・見積もり無料</h4>
+ <p>汚染状況・作業範囲によって費用が異なります。見積もり後のキャンセルも可能です。</p>
+ </div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- ESTATE -->
+<section class="estate" id="estate">
+ <div class="sec-inner">
+ <p class="sec-label">ESTATE CLEARANCE</p>
+ <div class="service-hd">
+ <div class="service-num" style="background:var(--green)">02</div>
+ <div>
+ <h2 class="sec-title">遺品整理・遺品買取</h2>
+ </div>
+ </div>
+ <div class="rule" style="background:var(--green)"></div>
+ <p class="sec-lead">遺品整理士が遺族に寄り添いながら対応。古物商許可を保有しているため、遺品の適正買取・処分費の軽減も一社で完結します。</p>
+
+ <div class="estate-grid reveal">
+ <div class="estate-card">
+ <div class="estate-tag">CLEARANCE</div>
+ <div class="estate-name">遺品整理<br>（片付け・処分）</div>
+ <div class="estate-desc">遺族の気持ちに寄り添いながら、丁寧に仕分け・搬出・処分を行います。生前整理や空き家整理にも対応。</div>
+ <div class="estate-price"><strong>要お見積もり</strong>　/ 現地確認後にご提示</div>
+ </div>
+ <div class="estate-card">
+ <div class="estate-tag">PURCHASE</div>
+ <div class="estate-name">遺品買取<br>（古物商許可保有）</div>
+ <div class="estate-desc">整理の中で価値ある品を適正価格で買取。買取金額を作業費と相殺することで、実質的な費用を抑えられます。</div>
+ <div class="estate-price"><strong>買取金額を作業費に充当可能</strong></div>
+ </div>
+ <div class="estate-card">
+ <div class="estate-tag">COMBO</div>
+ <div class="estate-name">特殊清掃＋<br>遺品整理セット</div>
+ <div class="estate-desc">孤独死後の現場対応で最も多い「清掃と整理を同時に依頼したい」ケース。Maplyなら一社で完結します。</div>
+ <div class="estate-price"><strong>セット割引あり</strong>　/ 詳細はお問い合わせ</div>
+ </div>
+ <div class="estate-card">
+ <div class="estate-tag">SUPPORT</div>
+ <div class="estate-name">生前整理</div>
+ <div class="estate-desc">ご本人やご家族のご意向を確認しながら整理を進めます。急がず、丁寧に。終活サポートにも対応します。</div>
+ <div class="estate-price"><strong>要お見積もり</strong>　/ 内容に応じてご相談</div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- HOUSECLEANING -->
+<section class="clean" id="clean">
+ <div class="sec-inner">
+ <p class="sec-label">HOUSE CLEANING</p>
+ <div class="service-hd">
+ <div class="service-num">03</div>
+ <div>
+ <h2 class="sec-title">ハウスクリーニング</h2>
+ </div>
+ </div>
+ <div class="rule" style="background:var(--gold)"></div>
+ <p class="sec-lead">すき家・はま寿司をはじめとする大手飲食チェーンの清掃実績を持つ専門チームが対応。エアコン・浴室・キッチン・床ワックスなど幅広くご対応します。</p>
+
+ <div style="margin-top:36px">
+ <div class="price-plans reveal">
+ <div class="price-plan">
+ <div class="price-plan-name">お引越し前・後<br>まるごとクリーニング</div>
+ <div class="price-plan-price">24,200<small>円〜（税込）</small></div>
+ <div class="price-plan-desc">家具・お荷物のない状態が対象。空室の徹底清掃に最適です。</div>
+ </div>
+ <div class="price-plan">
+ <div class="price-plan-name">在宅まるごと<br>クリーニング</div>
+ <div class="price-plan-price">29,700<small>円〜（税込）</small></div>
+ <div class="price-plan-desc">在宅中にプロがまとめてお掃除。忙しいご家庭に好評のパックです。</div>
+ </div>
+ </div>
+ <div class="price-items reveal">
+ <div class="price-item">
+ <div class="price-item-name">エアコンクリーニング</div>
+ <div class="price-item-price">8,800<small>円〜（税込）</small></div>
+ <div class="price-item-note">自動洗浄タイプ 16,500円〜</div>
+ </div>
+ <div class="price-item">
+ <div class="price-item-name">レンジフードクリーニング</div>
+ <div class="price-item-price">9,900<small>円〜（税込）</small></div>
+ </div>
+ <div class="price-item">
+ <div class="price-item-name">浴室クリーニング</div>
+ <div class="price-item-price">16,500<small>円（税込）</small></div>
+ </div>
+ <div class="price-item">
+ <div class="price-item-name">キッチンクリーニング</div>
+ <div class="price-item-price">16,500<small>円（税込）</small></div>
+ </div>
+ <div class="price-item">
+ <div class="price-item-name">トイレクリーニング</div>
+ <div class="price-item-price">6,600<small>円（税込）</small></div>
+ </div>
+ <div class="price-item">
+ <div class="price-item-name">洗面所クリーニング</div>
+ <div class="price-item-price">6,600<small>円（税込）</small></div>
+ </div>
+ <div class="price-item">
+ <div class="price-item-name">床洗浄（フローリング）</div>
+ <div class="price-item-price">220<small>円/㎡〜（税込）</small></div>
+ <div class="price-item-note">WAX仕上げ 550円/㎡　剥離仕上げ 880円/㎡</div>
+ </div>
+ <div class="price-item" style="background:var(--navy);color:#fff">
+ <div class="price-item-name" style="color:var(--gold2)">特殊清掃・遺品整理</div>
+ <div class="price-item-price" style="font-size:15px;color:#fff">現地調査・無料見積</div>
+ <div class="price-item-note" style="color:rgba(255,255,255,.5)">内容により異なります</div>
+ </div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- WORRIES -->
+<section class="worries" id="worries">
+ <div class="sec-inner">
+ <p class="sec-label">PROBLEMS WE SOLVE</p>
+ <h2 class="sec-title">こんなお悩みはありませんか？</h2>
+ <div class="rule" style="background:var(--navy)"></div>
+ <div class="worry-list reveal">
+ <div class="worry">
+ <div class="worry-q">Q</div>
+ <div class="worry-text">
+ <strong>家族が遠方で遺品整理に来られない</strong>
+ <span>電話一本で対応可能。写真・ビデオ報告にも対応します。</span>
+ </div>
+ </div>
+ <div class="worry">
+ <div class="worry-q">Q</div>
+ <div class="worry-text">
+ <strong>特殊清掃をしたが後から臭いが戻ってきた</strong>
+ <span>オゾン脱臭機と臭気測定器で数値を出して完了確認します。</span>
+ </div>
+ </div>
+ <div class="worry">
+ <div class="worry-q">Q</div>
+ <div class="worry-text">
+ <strong>遺品に価値があるのかわからない</strong>
+ <span>古物商許可を持つスタッフが現場で査定します。</span>
+ </div>
+ </div>
+ <div class="worry">
+ <div class="worry-q">Q</div>
+ <div class="worry-text">
+ <strong>近所に知られたくない</strong>
+ <span>社名非表示の車両・私服対応など、プライバシーに配慮した対応が可能です。</span>
+ </div>
+ </div>
+ <div class="worry">
+ <div class="worry-q">Q</div>
+ <div class="worry-text">
+ <strong>清掃と遺品整理を別々の業者に頼みたくない</strong>
+ <span>ハウスクリーニング・特殊清掃・遺品整理すべてMaplyで完結します。</span>
+ </div>
+ </div>
+ <div class="worry">
+ <div class="worry-q">Q</div>
+ <div class="worry-text">
+ <strong>エアコンのカビや水回りの頑固な汚れ</strong>
+ <span>ハウスクリーニングとしても幅広く対応しています。</span>
+ </div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+ <div class="sec-inner">
+ <p class="sec-label">FAQ</p>
+ <h2 class="sec-title">よくあるご質問</h2>
+ <div class="rule" style="background:var(--navy)"></div>
+ <div class="faq-list">
+ <div class="faq-item">
+ <div class="faq-q" onclick="toggleFaq(this)">
+ <div class="faq-q-mark">Q</div>
+ <div class="faq-q-text">お見積もりは無料ですか？</div>
+ <div class="faq-q-icon">＋</div>
+ </div>
+ <div class="faq-a"><p><span class="faq-a-mark">A</span>完全無料です。現地調査・お見積もりをご依頼いただき、ご成約に至らなくても費用を請求することは一切ございません。</p></div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q" onclick="toggleFaq(this)">
+ <div class="faq-q-mark">Q</div>
+ <div class="faq-q-text">当日・翌日の対応は可能ですか？</div>
+ <div class="faq-q-icon">＋</div>
+ </div>
+ <div class="faq-a"><p><span class="faq-a-mark">A</span>特殊清掃・遺品整理はお問い合わせいただいた当日〜翌日の対応が可能な場合があります。まずはお電話（029-352-9388）でご状況をお聞かせください。</p></div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q" onclick="toggleFaq(this)">
+ <div class="faq-q-mark">Q</div>
+ <div class="faq-q-text">土日・祝日でも対応していますか？</div>
+ <div class="faq-q-icon">＋</div>
+ </div>
+ <div class="faq-a"><p><span class="faq-a-mark">A</span>ご相談ください。できる限りお客様のご希望日時に対応いたします。特殊清掃・遺品整理のご相談は時間外でも折り返し対応いたします。</p></div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q" onclick="toggleFaq(this)">
+ <div class="faq-q-mark">Q</div>
+ <div class="faq-q-text">作業当日に立ち会いが必要ですか？</div>
+ <div class="faq-q-icon">＋</div>
+ </div>
+ <div class="faq-a"><p><span class="faq-a-mark">A</span>お客様のご都合に合わせて対応可能です。鍵の受け渡しや処分物の確認などをあらかじめお電話でお打ち合わせのうえ、不在時の作業にも対応しております。</p></div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q" onclick="toggleFaq(this)">
+ <div class="faq-q-mark">Q</div>
+ <div class="faq-q-text">遺品の買取と処分はどちらも対応できますか？</div>
+ <div class="faq-q-icon">＋</div>
+ </div>
+ <div class="faq-a"><p><span class="faq-a-mark">A</span>はい、どちらも対応可能です。古物商許可を保有しているため、価値のある遺品は適正価格での買取が可能です。買取金額は作業費と相殺することができ、実質的なご負担を軽減できます。</p></div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q" onclick="toggleFaq(this)">
+ <div class="faq-q-mark">Q</div>
+ <div class="faq-q-text">特殊清掃後、臭いが残ってしまう場合はありますか？</div>
+ <div class="faq-q-icon">＋</div>
+ </div>
+ <div class="faq-a"><p><span class="faq-a-mark">A</span>体液が床下・壁内に深く浸透している場合、表面清掃だけでは完全な消臭が難しいことがあります。その場合は床材・壁材の除去が必要になる場合があります。Maplyでは臭気測定器による数値確認を行い、完了基準を明示します。</p></div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q" onclick="toggleFaq(this)">
+ <div class="faq-q-mark">Q</div>
+ <div class="faq-q-text">他社との相見積もりは可能ですか？</div>
+ <div class="faq-q-icon">＋</div>
+ </div>
+ <div class="faq-a"><p><span class="faq-a-mark">A</span>もちろん可能です。他社様のお見積書をご提示いただければ、内容を確認のうえご検討いたします。</p></div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- AREA -->
+<div class="area">
+ <div class="area-inner">
+ <div class="area-title">対応エリア</div>
+ <div class="area-tags">
+ <span class="area-tag">水戸市</span>
+ <span class="area-tag">那珂市</span>
+ <span class="area-tag">ひたちなか市</span>
+ <span class="area-tag">笠間市</span>
+ <span class="area-tag">小美玉市</span>
+ <span class="area-tag">茨城町</span>
+ <span class="area-tag">大洗町</span>
+ <span class="area-tag" style="opacity:.6">その他エリアもご相談可</span>
+ </div>
+ <div class="area-note">※上記エリア外もお気軽にご相談ください。</div>
+ </div>
+</div>
+
+<!-- COMPANY -->
+<section class="company" id="company">
+ <div class="sec-inner">
+ <p class="sec-label">COMPANY</p>
+ <h2 class="sec-title">会社案内</h2>
+ <div class="rule" style="background:var(--navy)"></div>
+ <div class="company-grid">
+ <div>
+ <table class="company-tbl">
+ <tr><th>会社名</th><td>合同会社Maply（メイプリー）</td></tr>
+ <tr><th>住所</th><td>茨城県那珂市</td></tr>
+ <tr><th>電話番号</th><td><a href="tel:0293529388">029-352-9388</a><br><a href="tel:0801359302">080-1359-3025（携帯）</a></td></tr>
+ <tr><th>営業時間</th><td>月曜〜土曜 9:00〜17:00<br><small style="color:var(--muted)">特殊清掃・遺品整理のご相談は時間外も折り返し対応</small></td></tr>
+ <tr><th>業務内容</th><td>ハウスクリーニング・特殊清掃・遺品整理・遺品買取</td></tr>
+ <tr><th>営業地域</th><td>水戸市・那珂市・ひたちなか市ほか茨城県内</td></tr>
+ </table>
+ </div>
+ <div>
+ <h3 style="font-size:14px;font-weight:700;color:var(--navy);margin-bottom:16px;letter-spacing:.04em">保有資格・許認可</h3>
+ <div class="license-list">
+ <div class="license-item reveal">
+ <div class="l-name">事件現場特殊清掃士</div>
+ <div class="l-num">一般社団法人 事件現場特殊清掃センター</div>
+ </div>
+ <div class="license-item reveal">
+ <div class="l-name">遺品整理士</div>
+ <div class="l-num">一般財団法人 遺品整理士認定協会</div>
+ </div>
+ <div class="license-item reveal">
+ <div class="l-name">古物商許可</div>
+ <div class="l-num">茨城県公安委員会</div>
+ </div>
+ <div class="license-item reveal">
+ <div class="l-name">放課後等デイサービス 指定事業者</div>
+ <div class="l-num">茨城県（Maplyアフタースクール 2拠点運営）</div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="cta">
+ <div class="cta-inner">
+ <h2 class="cta-title">まずは、お気軽にご相談ください</h2>
+ <p class="cta-lead">お見積もりは無料です。特殊清掃・遺品整理のご相談は<br>秘密厳守・時間外でも折り返し対応いたします。</p>
+ <a href="tel:0293529388" class="cta-tel">029-352-9388</a>
+ <div class="cta-hours">受付時間：月曜〜土曜 9:00〜17:00　日曜・祝日 休</div>
+ <div class="cta-btns">
+ <a href="tel:0801359302" class="btn btn-gold">080-1359-3025（携帯）</a>
+ </div>
+ <div class="cta-sub">特殊清掃・遺品整理のご相談は時間外でも折り返し対応いたします</div>
+ </div>
+</section>
+
+<footer>
+ <p>© 2024 合同会社Maply　茨城県那珂市　／　ハウスクリーニング・特殊清掃・遺品整理</p>
+</footer>
+
+<script>
+// FAQ toggle
+function toggleFaq(el){
+ const item = el.closest('.faq-item');
+ item.classList.toggle('open');
+}
+
+// Scroll reveal
+const obs = new IntersectionObserver(entries => {
+ entries.forEach(e => {
+ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target) }
+ });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
