@@ -14,7 +14,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;font-size:16px}
 body{font-family:'Noto Sans JP',sans-serif;color:#1a1a1a;line-height:1.7;background:#fff}
-a{text-decoration:none;color:inherit}
+a{text-decoration:none;color:inherit;background:transparent}
 img{max-width:100%;display:block}
 
 /* ── VARIABLES ── */
@@ -45,14 +45,14 @@ img{max-width:100%;display:block}
 .nav-tel small{display:block;font-size:10px;font-weight:400;color:rgba(255,255,255,.5);text-align:right}
 
 /* ── HERO ── */
-.hero{min-height:100svh;background:var(--navy);display:flex;flex-direction:column;justify-content:center;padding:88px 20px 60px;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 50%,rgba(42,92,69,.25) 0%,transparent 60%)}
-.hero-inner{max-width:var(--w);margin:0 auto;width:100%}
-.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(184,130,42,.4);color:var(--gold2);font-size:11px;letter-spacing:.12em;padding:5px 14px;border-radius:2px;margin-bottom:28px}
+.hero{min-height:100vh;background:var(--navy);display:flex;flex-direction:column;justify-content:center;padding:88px 20px 60px;position:relative;overflow:hidden}
+.hero::before{display:none}
+.hero-inner{max-width:var(--w);margin:0 auto;width:100%;position:relative;z-index:2}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(184,130,42,.4);color:#d4a04a!important;font-size:11px;letter-spacing:.12em;padding:5px 14px;border-radius:2px;margin-bottom:28px}
 .hero-eyebrow::before{content:'';width:20px;height:1px;background:var(--gold)}
-.hero-h1{font-family:'Noto Serif JP',serif;font-size:clamp(28px,5.5vw,52px);line-height:1.35;color:#fff;font-weight:700;letter-spacing:.03em;margin-bottom:20px}
+.hero-h1{font-family:'Noto Serif JP',serif;font-size:clamp(28px,5.5vw,52px);line-height:1.35;color:#ffffff!important;font-weight:700;letter-spacing:.03em;margin-bottom:20px}
 .hero-h1 em{color:var(--gold2);font-style:normal}
-.hero-lead{color:rgba(255,255,255,.65);font-size:clamp(13px,2vw,15px);line-height:1.9;max-width:560px;margin-bottom:36px}
+.hero-lead{color:#cccccc!important;font-size:clamp(13px,2vw,15px);line-height:1.9;max-width:560px;margin-bottom:36px}
 
 /* ── CREDENTIAL BADGES ── */
 .cred-badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:44px}
@@ -71,11 +71,11 @@ img{max-width:100%;display:block}
 
 /* ── SERVICE NAV ── */
 .service-nav{background:var(--navy2);border-top:1px solid rgba(255,255,255,.07)}
-.service-nav-inner{max-width:var(--w);margin:0 auto;display:flex}
-.snav-item{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px 8px;color:rgba(255,255,255,.6);font-size:12px;letter-spacing:.05em;border-right:1px solid rgba(255,255,255,.08);transition:all .2s;cursor:pointer}
+.service-nav-inner{max-width:var(--w);margin:0 auto;display:flex;width:100%}
+.snav-item{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px 8px;color:rgba(255,255,255,.6);font-size:12px;letter-spacing:.05em;border-right:1px solid rgba(255,255,255,.08);transition:all .2s;cursor:pointer;background-color:#243448!important;text-decoration:none!important;color:rgba(255,255,255,.65)!important}
 .snav-item:last-child{border-right:none}
-.snav-item:hover{background:rgba(255,255,255,.04);color:#fff}
-.snav-item .snav-icon{display:flex;align-items:center;justify-content:center;width:20px;height:20px;margin-bottom:6px;opacity:.7}.snav-item:hover .snav-icon{opacity:1}
+.snav-item:hover{background-color:#2d3f52!important;color:#ffffff!important}
+.snav-item .snav-icon{font-size:10px;margin-bottom:6px;opacity:.5}.snav-item:hover .snav-icon{opacity:.9}
 .snav-item.special{border-top:3px solid var(--red)}
 .snav-item.estate{border-top:3px solid var(--green)}
 .snav-item.clean{border-top:3px solid var(--gold)}
@@ -288,19 +288,19 @@ footer p{font-size:11px;color:rgba(255,255,255,.3);letter-spacing:.05em}
 <nav class="service-nav">
  <div class="service-nav-inner">
  <a href="#special" class="snav-item special">
- <span class="snav-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.5"/><line x1="11" y1="11" x2="17" y2="17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>特殊清掃
+ <span class="snav-icon">◆</span>特殊清掃
  </a>
  <a href="#estate" class="snav-item estate">
- <span class="snav-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6l6-3 6 3v6l-6 3-6-3V6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><line x1="9" y1="3" x2="9" y2="15" stroke="currentColor" stroke-width="1.5"/></svg></span>遺品整理・買取
+ <span class="snav-icon">◆</span>遺品整理・買取
  </a>
  <a href="#clean" class="snav-item clean">
- <span class="snav-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 14h10M6 14V8l3-5 3 5v6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></span>ハウスクリーニング
+ <span class="snav-icon">◆</span>ハウスクリーニング
  </a>
  <a href="#faq" class="snav-item">
- <span class="snav-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 4h12v8H9l-4 3V12H3V4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>よくある質問
+ <span class="snav-icon">◆</span>よくある質問
  </a>
  <a href="#company" class="snav-item">
- <span class="snav-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="5" width="12" height="10" stroke="currentColor" stroke-width="1.5"/><path d="M7 15V11h4v4" stroke="currentColor" stroke-width="1.5"/><path d="M6 5V3h6v2" stroke="currentColor" stroke-width="1.5"/></svg></span>会社案内
+ <span class="snav-icon">◆</span>会社案内
  </a>
  </div>
 </nav>
